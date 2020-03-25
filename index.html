@@ -97,7 +97,10 @@
     </div>
 
     <div class="form-group">
-        <p>Do you have pre-existing medical issues?</p>
+ 
+        <p>Do you have pre-existing medical issues?
+            <span class="clue">(Check all that apply)</span>
+        </p>
         <label>
             <input 
             type="checkbox" 
@@ -105,87 +108,56 @@
             value="asthma"    
             />Asthma
         </label>
-        
-        <div class="form-group">
-            <p>Do you have pre-existing medical issues?</p>
-            <label>
-                <input 
-                type="checkbox" 
-                name="medical"
-                value="asthma"    
-                />Asthma
-            </label>
 
-        <div class="form-group">
-            <p>Do you have pre-existing medical issues?</p>
-            <label>
-                <input 
-                type="checkbox" 
-                name="medical"
-                value="asthma"    
-                />Asthma
-            </label>
+        <label>
+            <input 
+            type="checkbox" 
+            name="medical"
+            value="coronary"    
+            />Heart issues
+        </label>
 
-            <div class="form-group">
-                <p>Do you have pre-existing medical issues?</p>
-                <label>
-                    <input 
-                    type="checkbox" 
-                    name="medical"
-                    value="asthma"    
-                    />Asthma
-                </label>
+        <label>
+            <input 
+            type="checkbox" 
+            name="medical"
+            value="htn"    
+            />Hypertension
+        </label>
 
-                <p>Do you have pre-existing medical issues?</p>
-                <label>
-                    <input 
-                    type="checkbox" 
-                    name="medical"
-                    value="asthma"    
-                    />Asthma
-                </label>
+        <label>
+            <input 
+            type="checkbox" 
+            name="medical"
+            value="none"    
+            />None
+        </label>
 
-                <label>
-                    <input 
-                    type="checkbox" 
-                    name="medical"
-                    value="coronary"    
-                    />Heart issues
-                </label>
-
-                <label>
-                    <input 
-                    type="checkbox" 
-                    name="medical"
-                    value="htn"    
-                    />Hypertension
-                </label>
-
-                <label>
-                    <input 
-                    type="checkbox" 
-                    name="medical"
-                    value="none"    
-                    />None
-                </label>
-
-                <label>
-                    <input 
-                    type="checkbox" 
-                    name="medical"
-                    value="other"    
-                    />Other
-                </label>
+        <label>
+            <input 
+            type="checkbox" 
+            name="medical"
+            value="other"    
+            />Other
+        </label>
 
 
     </div>
 
+    <div class="form-group">
+        <p>Is there anything specific you'd like for us to know?</p>
+        <textarea
+          id="comments"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
 
-
-
-
-    </div>
-
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
 
     </form>
 
