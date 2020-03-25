@@ -4,50 +4,60 @@
 </head>
 
 <body>
+
+<div class="container">
+
+<header class="header">
     <!-- user story 1-->
-    <h1 id="title">Coronavirus Questionnaire</h1>
+    <h1 id="title" class="text-center">Coronavirus Questionnaire</h1>
 
     <!--user story 2-->
-    <p id="description">Please fill out the following questionnaire before your phone call...</p>
+    <p id="description" class="description text-center">Please fill out the following questionnaire before your phone call...</p>
+</header>
 
     <!--user story 3-->
     <form id="survey-form">
         <div class="form-group">
-            <label id="name-label">User Name:</label>
+            <label id="name-label" for="name">User Name:</label>
             <input 
                 type="text" 
                 name="name"
                 id="name"
+                class="form-control"
                 placeholder="Enter your name"    
+                required
                 />
         </div>
 
         <div class="form-group">
-            <label id="email-label">E-mail:</label>
+            <label id="email-label" for="email">E-mail:</label>
             <input 
                 type="email" 
                 name="email"
                 id="email"    
+                class="form-control"
                 placeholder="Enter your e-mail"
+                required
                 />
         </div>
 
 
     <div class="form-group">
-        <label id="number-label">Age:</label>
+        <label id="number-label" for="number">Age:<span class="clue">(optional)</span></label>
         <input 
             type="number" 
             name="age"
             id="number"    
             min = 18
             max = 99
+            class="form-control"
             placeholder="Age"
             />
     </div>
 
     <div class="form-group">
         <p>Which option best describes your current role?</p>
-        <select id="dropdown" name="role">
+        <select id="dropdown" name="role" class="form-control" required>
             <option disabled selected value>Select current role</option>
             <option value="student">Student</option>
             <option value="job">Full time job</option>
@@ -64,6 +74,7 @@
             type="radio" 
             name="symptoms"
             value="definitely"    
+            class="input-radio"
             />Definitely
         </label>
         
@@ -72,6 +83,7 @@
             type="radio" 
             name="symptoms"
             value="maybe"    
+            class="input-radio"
             />Maybe
         </label>
 
@@ -79,14 +91,15 @@
             <input 
             type="radio" 
             name="symptoms"
-            value="not-sure"    
+            value="not-sure"   
+            class="input-radio" 
             />Not sure
         </label>
     </div>
 
     <div class="form-group">
         <p>What is your living situation?</p>
-        <select id="dropdown" name="living">
+        <select id="most-like" name="living" class="form-control">
             <option disabled selected value>Select situation</option>
             <option value="alone">Alone</option>
             <option value="others">With others</option>
@@ -105,7 +118,8 @@
             <input 
             type="checkbox" 
             name="medical"
-            value="asthma"    
+            value="asthma" 
+            class="input-checkbox"   
             />Asthma
         </label>
 
@@ -114,6 +128,7 @@
             type="checkbox" 
             name="medical"
             value="coronary"    
+            class="input-checkbox"
             />Heart issues
         </label>
 
@@ -122,6 +137,7 @@
             type="checkbox" 
             name="medical"
             value="htn"    
+            class="input-checkbox"
             />Hypertension
         </label>
 
@@ -130,6 +146,7 @@
             type="checkbox" 
             name="medical"
             value="none"    
+            class="input-checkbox"
             />None
         </label>
 
@@ -138,6 +155,7 @@
             type="checkbox" 
             name="medical"
             value="other"    
+            class="input-checkbox"
             />Other
         </label>
 
@@ -148,6 +166,7 @@
         <p>Is there anything specific you'd like for us to know?</p>
         <textarea
           id="comments"
+          class="input-textarea"
           name="comment"
           placeholder="Enter your comment here..."
         ></textarea>
@@ -162,7 +181,7 @@
     </form>
 
 
-
+</div>
 
 </body>
 
